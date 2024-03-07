@@ -1,5 +1,5 @@
 // Importação dos componentes necessarios
-import { BroserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header";
 import Home from "./Components/Home";

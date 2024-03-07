@@ -5,44 +5,40 @@ import styled, { keyframes } from "styled-components";
 // 🎨
 
 // Componente funcional About
-
 const About = () => {
-  return(
-    <Container>
-      {/* Wrap para o conteúdo da seção "Sobre Mim" */}
-      <ContentWrapper>
-        <Title>Sobre Mim</Title>
+  return (
+  <Container>
+    {/* {Wrapper para o conteúdo da seção "Sobre Mim"} */}
+    <ContentWrapper>
+      <Title>Sobre Mim</Title>
 
-        {/* Descrição */}
-        <Description>
-          Sou um desenvolvedor apaixonado por tecnologia e sempre em busca de novos desafio. Minha jornada começou quando descobri o poder da programação e desde então, não parei mais de aprender e evoluir.
-        </Description>
+      {/* {Descrição} */}
+      <Description>
+        Sou um desenvolvesor apaixonado por tecnologia e sempre em busca de novos desafios. Minha jornada começou quando descobri o poder da programação e desde então, não parei mais de aprender e evoluir.
+      </Description>
 
-        {/* Wrapper para a seção de habilidades */}
-        <SkillsWrapper>
-          <SkillTitle>Algumas de minhas habilidades:</SkillTitle>
+       {/* {Wrapper para o conteúdo da seção de habilidades*/}
+       <SkillsWrapper>
+        <SkillTitle>Algumas de minhas habilidades:</SkillTitle>
 
-          {/* Lista de habilidades */}
+        {/* {Lista de habilidades} */}
+        <SkillList>
           <Skill>
             <SkillIcon>💻</SkillIcon>
-            <SkillName>Desenvolvimento Web</SkillName>
+            <SkillName>Desenvolvimento de Web</SkillName>
           </Skill>
-
           <Skill>
             <SkillIcon>📱</SkillIcon>
             <SkillName>Desenvolvimento Mobile</SkillName>
           </Skill>
-
           <Skill>
             <SkillIcon>🎨</SkillIcon>
-            <SkillName>Desing de Interfaces</SkillName>
+            <SkillName>Design de Interfaces</SkillName>
           </Skill>
-
-        </SkillsWrapper>
-
-      </ContentWrapper>
-
-    </Container>
+        </SkillList>
+       </SkillsWrapper>
+    </ContentWrapper>
+  </Container>
   );
 };
 
