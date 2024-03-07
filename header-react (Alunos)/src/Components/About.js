@@ -6,12 +6,45 @@ import styled, { keyframes } from "styled-components";
 
 // Componente funcional About
 
+const About = () => {
+  return(
+    <Container>
+      {/* Wrap para o conteúdo da seção "Sobre Mim" */}
+      <ContentWrapper>
+        <Title>Sobre Mim</Title>
 
+        {/* Descrição */}
+        <Description>
+          Sou um desenvolvedor apaixonado por tecnologia e sempre em busca de novos desafio. Minha jornada começou quando descobri o poder da programação e desde então, não parei mais de aprender e evoluir.
+        </Description>
 
+        {/* Wrapper para a seção de habilidades */}
+        <SkillsWrapper>
+          <SkillTitle>Algumas de minhas habilidades:</SkillTitle>
 
+          {/* Lista de habilidades */}
+          <Skill>
+            <SkillIcon>💻</SkillIcon>
+            <SkillName>Desenvolvimento Web</SkillName>
+          </Skill>
 
-// 4ª Digitação
+          <Skill>
+            <SkillIcon>📱</SkillIcon>
+            <SkillName>Desenvolvimento Mobile</SkillName>
+          </Skill>
 
+          <Skill>
+            <SkillIcon>🎨</SkillIcon>
+            <SkillName>Desing de Interfaces</SkillName>
+          </Skill>
+
+        </SkillsWrapper>
+
+      </ContentWrapper>
+
+    </Container>
+  );
+};
 
 
 

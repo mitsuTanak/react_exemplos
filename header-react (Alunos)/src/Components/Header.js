@@ -27,9 +27,15 @@ const Header = (props) => {
           <span>Contact us</span>
         </a>
       </NavMenu>
+
+      {/* Wrapper adicional */}
+      <Wrap>Hi</Wrap>
+
+      {/* Botão de login */}
+      <Login>Login</Login>
     </Container>
-  )
-}
+  );
+};
 
 
 

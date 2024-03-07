@@ -1,12 +1,45 @@
 import styled, { keyframes } from "styled-components";
 
 // Componente funcional Contact
+const Contact = () => {
+  return(
+    <Container>
 
+      {/* Wrapper para o conteúdo do formulario */}
+      <ContentWrapper>
+        <Title>Entre em Contato</Title>
 
+        {/* Formulário de contato */}
+        <Form>
 
+          {/* Grupo de campos para o nome */}
+          <FormGroup>
+            <Label htmlFor="name">Nome</Label>
+            <Input type="text" id="name" placeholder="Digite seu nome" />
+          </FormGroup>
 
+          {/* Grupo de campos para o nome */}
+          <FormGroup>
+            <Label htmlFor="name">Email</Label>
+            <Input type="email" id="email" placeholder="Digite seu email" />
+          </FormGroup>
 
-// 5ª Digitação
+          {/* Grupo de campos para o nome */}
+          <FormGroup>
+            <Label htmlFor="name">Mensagem</Label>
+            <Input type="mensagem" rows="5" placeholder="Digite seu mensagem" />
+
+            {/* Botão de envio do formulário */}
+            <SubmitButton type="subit">Enviar</SubmitButton>
+          </FormGroup>
+
+        </Form>
+
+      </ContentWrapper>
+
+    </Container>
+  );
+};
 
 
 
