@@ -45,7 +45,7 @@ html{
 }
 
 /* Estilo para o botão de reiniciar */
-.reser-button {
+.reset-button {
   margin-top: 20px;
   padding: 10px 20px;
 
@@ -61,6 +61,6 @@ html{
 }
 
 /* Estilo para o botão de reiniciar no hover */
-.reser-button:hover {
+.reset-button:hover {
   background-color: #0056b3;
 }
