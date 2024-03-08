@@ -64,3 +64,9 @@ html{
 .reset-button:hover {
   background-color: #0056b3;
 }
+
+/* Dark mode */
+.dark-mode{
+  background-color: black;
+  color: white;
+}
