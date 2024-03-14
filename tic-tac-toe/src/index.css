@@ -1,6 +1,16 @@
 /* Estilos globais para centralizar todo o conteúdo */
+
+:root {
+
+  --fundo: #f4f4f4;
+  --qUsado: #d0d0d0;
+  --h1: #000
+
+}
+
 body,
 html{
+
   height: 100%;
   margin: 0;
 
@@ -8,14 +18,18 @@ html{
   justify-content: center;
   align-items: center;
 
-  background-color: #f4f4f4;
+  background-color: var(--fundo);
   
   font-family: Helvetica;
   text-align: center;
 }
 
+h1{
+  color: var(--h1);
+}
+
 /* Estilo para cada quadrado */
-.square{
+.squareX, .squareO, .squarenull{
   width: 100px;
   height: 100px;
 
@@ -28,6 +42,17 @@ html{
 
   vertical-align: middle;
   cursor: pointer;
+}
+
+/* Estilo do Jogador */
+.squareX{
+  color: orange;
+  background-color: var(--qUsado);
+}
+
+.squareO{
+  color: blue;
+  background-color: var(--qUsado);
 }
 
 /* Estilo para o vencedor */
@@ -63,10 +88,4 @@ html{
 /* Estilo para o botão de reiniciar no hover */
 .reset-button:hover {
   background-color: #0056b3;
-}
-
-/* Dark mode */
-.dark-mode{
-  background-color: black;
-  color: white;
 }

@@ -14,7 +14,8 @@ const Board = () => {
     // Função para lidar com o clique em um quadrado
     const handleClick = (i) => {
         // Verifica se o quadrado já está preenchido ou se há um vencedor
-        if (squares[i] || Winner) return;
+        if(squares[i] || Winner)return;
+        
 
         // Cria uma uma copia do array de quadrados para evitar mutações diteras
         const newSquares = squares.slice();
@@ -34,6 +35,9 @@ const Board = () => {
         setxIsNext(true);
     };
 
+    // Criterio de Empate
+    const draw = squares.every((Square) => Square !=null);
+
     // Renderização do componente
     return (
         <div>
@@ -44,10 +48,14 @@ const Board = () => {
                 {Winner ? (
                     // Exibe o vencedor, se hover
                     <p className="winner">O Vencedor é: {Winner}!!</p>
+                ) : draw ? (
+                    // Exibe o texto:
+                    <p className="winner">Empate!</p>
                 ) : (
                     // Exibe o próximo jogador se não hover vencedor
                     `Proximo a jogar: ${xIsNext ? "X" : "O"}`
                 )}
+
             </div>
 
             {/* Renderização das linhas do tabuleiro com componentes Square */}
